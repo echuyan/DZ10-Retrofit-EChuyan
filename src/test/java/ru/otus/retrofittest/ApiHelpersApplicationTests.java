@@ -1,8 +1,6 @@
-package com.example.ApiHelpers;
+package ru.otus.retrofittest;
 
-import com.example.ApiHelpers.APIInterface;
-import com.example.ApiHelpers.jsonExamples.ApiClientHelper;
-import com.example.ApiHelpers.jsonExamples.pojo.User;
+import ru.otus.retrofittest.jsonExamples.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import retrofit2.Response;
@@ -14,12 +12,10 @@ class ApiHelpersApplicationTests {
 
 	@Test
 	void retrofitTest() {
-
 		Response<User> response;
 
 		//Endpoint client for send request
 		APIInterface service = ApiClientHelper.getClient().create(APIInterface.class);
-
 
 		//GET request for get request
 
@@ -38,4 +34,6 @@ class ApiHelpersApplicationTests {
 
 
 	}
+
+
 }

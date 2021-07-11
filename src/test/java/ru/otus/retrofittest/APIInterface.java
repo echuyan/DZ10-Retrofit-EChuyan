@@ -1,6 +1,6 @@
-package com.example.ApiHelpers;
+package ru.otus.retrofittest;
 
-import com.example.ApiHelpers.jsonExamples.pojo.User;
+import ru.otus.retrofittest.jsonExamples.pojo.User;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

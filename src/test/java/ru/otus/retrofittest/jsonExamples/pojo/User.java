@@ -1,4 +1,4 @@
-package com.example.ApiHelpers.jsonExamples.pojo;
+package ru.otus.retrofittest.jsonExamples.pojo;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -27,7 +27,7 @@ public class User {
                 ", support=" + support +
                 '}';
     }
-@JsonProperty("data")
+    @JsonProperty("data")
     private Data data;
 
     @JsonProperty("support")
